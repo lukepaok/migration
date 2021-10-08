@@ -1,0 +1,30 @@
+/* Main.css                     */
+/*                               */
+
+BODY {margin: 0, 0, 0, 0; padding: 0px, 0px;}
+FONT {font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 10px; color: #000000; top: 0px; }
+
+
+/* sortable */
+TABLE.sortable {border: 1px solid #B0C4DE; border-collapse: collapse; font-family: Arial, Garamond, Tahoma; font-size: 9pt;}
+TABLE.sortable THEAD { background-color:#eee; color:#666666; font-weight: bold; cursor: default; }
+TABLE.sortable TD {border: 1px solid #B0C4DE; color: #666666; font-family: Arial, Verdana, Tahoma, sans-serif;
+   font-size: 9pt; padding-left: 1px; text-align: left; }
+
+
+/* htmltbl */
+TABLE.htmltbl {border: 1px solid #B0C4DE; border-collapse: collapse; font-family: Arial, Garamond, Tahoma; font-size: 9pt;}
+TABLE.htmltbl THEAD { background-color:#eee; color:#666666; font-weight: bold; cursor: default; }
+TABLE.htmltbl TD {border: 1px solid #B0C4DE; color: #666666; font-family: Arial, Verdana, Tahoma, sans-serif;
+   font-size: 9pt; padding-left: 1px; text-align: left; }
+TABLE.htmltbl TD.cright {text-align: right; }
+TABLE.htmltbl TD.ccenter {border: 1px solid #B0C4DE; color: #666666; font-family: Arial, Verdana, Tahoma, sans-serif;
+   font-size: 9pt; padding-left: 1px; text-align: right; }
+TABLE.htmltbl TD.cempty {background-color: #C0C0C0; font-size: 3pt; }
+TABLE.htmltbl H1{ background-color: darkblue; color: #00FFFF; font-family: "Times New Roman"; font-size: 22px; font-weight: bold;
+   letter-spacing: 2px; margin-bottom: 0pt; margin-top: 0pt; padding-bottom: 0px; text-align: center;
+}
+TABLE.htmltbl H2{ font-family: "Times New Roman"; color: darkblue; font-size: 15px; font-weight: bold;
+   letter-spacing: 2px; margin-bottom: 0pt; margin-top: 0pt; padding-bottom: 0px; text-align: center;
+}
+TABLE.htmltbl H4{ font-family: "Times New Roman"; font-size: 15px; font-weight: bold; letter-spacing: 2px; text-align: center; }

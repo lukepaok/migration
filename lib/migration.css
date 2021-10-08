@@ -1,0 +1,308 @@
+/* Main.css                     */
+/*                               */
+
+BODY {background-color: #CEE4F5;
+   margin: 0, 0, 0, 0; padding: 0px, 0px;
+   scrollbar-face-color:#99B7D9; scrollbar-shadow-color: #000000; scrollbar-highlight-color: #ADD8E6; scrollbar-3dlight-color:#A9A9A9; scrollbar-darkshadow-color:#000000; scrollbar-track-color: #D3D3D3; scrollbar-arrow-color:#ffffff;}
+
+FONT {font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 11px; color: #000000; top: 0px; }
+FONT.PrText {font-family: Times New Roman, Arial, Georgia ; font-size: 10px; font-weight: normal; }
+
+A {font-family: Arial, Verdana, Georgia, Tahoma; color: #006400; text-decoration: none;}
+A:link      {color:#006400;}
+A:active    {color:#006400;}
+A:visited   {color:#006400;}
+A:hover     {color:#DC143C;}
+
+TD.pagetitle {color: #FFFFFF; font-family: Arial, Georgia, Verdana, Tahoma; font-size: 11pt; font-weight: bold; text-align: left;}
+TD.lefttitle {color: #ADD8E6; font-family: Tahoma, Georgia, Verdana ; font-size: 11pt; font-weight: bold;}
+TD.leftitem {font-family: Arial, Verdana ; font-size: 8pt;}
+
+TABLE.wininfo {border: 1px dotted #B0C4DE; border-collapse: collapse; color: #006699;
+   font-family: Arial, Garamond, Georgia, Tahoma; font-size: 8pt;}
+TD.wininfo {border: 1px dotted #B0C4DE; color: #1E90FF; font-family: Garamond, Georgia, Tahoma;
+   font-size: 10pt; padding-left: 6px; text-align: left; }
+
+TD.toptitle {color: #FFFF00; font-family: Arial, Tahoma; font-size: 30px; font-weight: bold;
+         text-align: center;  vertical-align: middle; width: 360;}
+
+.bottom {font-family: Arial, Tahoma, sans-serif; font-size: 12px; color: #FFFF00;}
+.mikro {font-family: sans-serif; font-size: 9px; color: #808080;}
+
+
+
+
+
+/* FORM */
+.forma TD {background-color: #E0FFFF; color: #000000;
+   font-family: Arial, Verdana, sans-serif; font-size: 13px; font-weight: bold;
+   padding-left:2px; padding-right:2px;}
+
+.forma TD.fld {background-color: #FFFFFF;
+   font-family: Verdana, sans-serif; font-size: 12px; font-weight: normal;}
+
+.forma input.btn {background-color: #708090;
+  color: #ffffff; border: #A9A9A9 outset 1px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;
+   padding:1 1 1 1;}
+
+/*------------------------gate4------------------------------------*/
+
+.gate4 TABLE.box {border :3px ridge #FFFFFF; border-collapse: collapse; margin: 10, 0, 0, 0;}
+.gate4 TH.box {background-color: #708090; color: #FFFFFF; text-align: center; font-family: Arial, Verdana; font-size: 18px;  font-weight: normal; padding: 1px, 1px; }
+.gate4 TD.box {border :1px ridge #FFFFFF; text-align: left; padding: 5px, 7px;}
+.gate4 TD {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px;
+   color: #000000; padding-left:2px; padding-right:2px; }
+
+.gate4 :link {font-size: 15px;}
+.gate4 :visited {font-size: 15px;}
+.gate4 :hover {color: #FFFFFF; background-color: #008080;}
+
+
+
+
+
+
+
+/* 4169E1, 6495ED, 708090,
+C0C0C0, A9A9A9, F5DEB3, FFFFE0
+4169E1
+Verdana, Arial, Garamond, Georgia, Tahoma, sans-serif, Times New Roman
+*/
+/*
+FONT.basic {font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 11px; color: #000000; top: 0px;
+   clip:  rect(0px auto auto auto);}
+Tο βασικό FONT εχει και το clip:  rect(0px auto auto auto); που δεν ξερω τις συνεπειες του
+και το εχω βγαλει απο το βασικο φοντ
+*/
+/* Το css τελειωνει εδω. Τα παρακατω ειναι για χρησιμοπιηση*/
+
+
+
+
+
+
+
+
+XX.BODY {
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 15px;
+   background-color: #4682B4;
+   color: #FFFFFF;
+   margin: 0, 0, 0, 0;
+   padding: 0px, 0px;
+   scrollbar-face-color:#99B7D9;
+   scrollbar-shadow-color: #000000;
+   scrollbar-highlight-color: #ADD8E6;
+   scrollbar-3dlight-color:#A9A9A9;
+   scrollbar-darkshadow-color:#000000;
+   scrollbar-track-color: #D3D3D3;
+   scrollbar-arrow-color:#ffffff;
+}
+
+BODY.page02 {
+   font-family: Arial, Verdana, Georgia, Tahoma;
+   font-size: 15px;
+   font-style: normal;
+   background-color: #5F9EA0;
+   color: #FFFFFF;
+   margin: 0, 0, 0, 0;
+   padding: 0px, 0px;
+   scrollbar-face-color:#99B7D9;
+   scrollbar-shadow-color: #000000;
+   scrollbar-highlight-color: #ADD8E6;
+   scrollbar-3dlight-color:#A9A9A9;
+   scrollbar-darkshadow-color:#000000;
+   scrollbar-track-color: #D3D3D3;
+   scrollbar-arrow-color:#ffffff;
+}
+
+
+FONT.Green {
+   color: #00FF00;
+   font-family: Arial, Garamond, Georgia, Microsoft sans serif, Times New Roman;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+FONT.Serial {
+   color: #00FFFF;
+   font-family: Microsoft sans serif, Times New Roman, Garamond;
+   font-size: 15px;
+}
+
+XX.H1 {
+   background-color: darkblue;
+}
+
+
+H1.headpage {
+   background-color: darkblue;
+   color: #00FFFF;
+   font-family: "Times New Roman";
+   font-size: 22px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   margin-bottom: 0pt;
+   margin-top: 0pt;
+   padding-bottom: 0px;
+   text-align: center;
+}
+
+
+TABLE.g4page {
+   border: 0;
+   cell-spacing: none;
+   text-align: center;
+   width: 100%;
+}
+
+TABLE.g4page41 {
+   border: 0;
+   cell-spacing: none;
+   text-align: left;
+   width: 95%;
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 15px;
+}
+
+TABLE.headitem {
+   background-color: #4169E1;
+   border : 1px solid #FFFFFF;
+   cell-spacing: none;
+   color: #00FFFF;
+   font-family: Tahoma;
+   font-size: 16px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   line-height: 12pt;
+   margin-bottom: -1pt;
+   margin-left: 0pt;
+   margin-top:  -1pt;
+   padding-bottom: 0pt;
+   padding-left: 0pt;
+   padding-right: 0pt
+   padding-top: 0pt;
+   text-align: center;
+}
+
+
+
+
+TABLE.bodyitem {
+   font-size: 15px;
+   cell-spacing: 2px;
+   text-align: center;
+}
+
+TABLE.menupage {
+   background-color: #6495ED;
+   text-align: center;
+   width: 100%;
+}
+
+A.menupage {
+   font-family: Arial, Verdana, Georgia, Tahoma;
+   font-size: 14px;
+   text-decoration: none;
+}
+
+A.menupage:link      {color:#FFFAFA;}
+A.menupage:active    {color:#A0522D;}
+A.menupage:visited   {color:#FFFAFA;}
+A.menupage:hover     {color:#FFFF00; background-color: #FF4500;}
+
+
+/* ------------------------------------------------------ */
+/* SMALL MENUS                                            */
+/* ------------------------------------------------------ */
+/* Templates for small menus                              */
+/*                                                        */
+/* TABLE.menucol                                          */
+/*                                                        */
+/*                                                        */
+/* TD.mnohdb = menu col head blue                         */
+/* TD.mnotmb = menu col item blue                         */
+/* TD.mnohdr = menu col head red                          */
+/* TD.mnotmr = menu col item red                          */
+/* A.mnolink= menu col link                               */
+/* ------------------------------------------------------ */
+
+
+TABLE.menucol {
+   border : 0;
+   border-collapse: collapse;
+   cell-spacing: none;
+   color: #800080;
+   padding: 0px, 0px;
+   text-align: left;
+}
+
+TD.mnohdb {
+   background-color:#C9D2FE;
+   border: 1px solid #FF6347;
+   border-top-width: 2px;
+   color: black;
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 10pt;
+   font-weight: bold;
+   text-align: center;
+}
+
+TD.mnotmb {
+   background-color:#E3E8FF;
+   border: 1px solid #FF6347;
+   color: #FF0000;
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 7pt;
+   padding-left: 3px;
+   text-align: left;
+
+}
+
+TD.mnohdr {
+   background-color:#ffebcd;
+   border: 1px solid chartreuse;
+   border-top-width: 2px;
+   color: black;
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 10pt;
+   font-weight: bold;
+   text-align: center;
+
+}
+
+TD.mnotmr {
+   background-color:#E3E8FF;
+   border: 1px solid chartreuse;
+   color: #FF0000;
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 7pt;
+   padding-left: 3px;
+   text-align: left;
+
+}
+
+A.mnolink {
+   font-family: Verdana, Arial, Georgia, Tahoma;
+   font-size: 10pt;
+   text-decoration: none;
+
+}
+
+A.mnolink:link      {color:#000080;}
+A.mnolink:active    {color:#A0522D;}
+A.mnolink:visited   {color:#000080;}
+A.mnolink:hover     {color:#FF1493;}
+
+
+
+
+/*           */
+/* H1          { color: #996633; background-color: #FFFFCC }  */
+
+
+
+
+
+
