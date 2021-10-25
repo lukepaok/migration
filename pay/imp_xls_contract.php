@@ -76,7 +76,7 @@ for ($i=$line_from; $i<= $line_to; $i++) {
   $RENK=trim($data->sheets[0]['cells'][$i][12]);
   $Categ=trim(substr($data->sheets[0]['cells'][$i][13],0,2));
   if ($AFM=='') { continue; }
-  $sql="SELECT * FROM EMPLOYEES WHERE EMP_TAX_NUMBER='".$AFM."'";
+  $sql="SELECT * FROM EMPLOYEES WHERE EMP_TAX_NUMBER='".$AFM."' AND FOR_ID=3";
   $Emp_id=f_Getfld($sql,'EMP_ID');
   if ($Emp_id!='') {
     $Contr_temp=$Contr_ar[$Contract];
@@ -137,7 +137,7 @@ print '¬—≈»« ¡Õ   ='.$Synola[2].$eol;
 print '◊Ÿ—…” « Ã≈ À¡»œ” ¡÷Ã='.$Synola[3].$eol;
 print 'LINE FROM='.$line_from.$eol;
 print 'LINE TO='.$line_to.$eol;
-//print '<H3 style="color:blue">ZXCVB</H3><pre>'; print_r($Xoris_AFM); print "</pre>";
+print '<H3 style="color:blue">ZXCVB</H3><pre>'; print_r($Xoris_AFM); print "</pre>";
 //INSERT INTO EMP_CONTRACT_PARAMS (EMP_ID,ECOP_DESCRIPTION,ECOP_VARIABLE,ECOP_TYPE,ECOP_VALUE,ECOP_FPOINT,ECOP_VALUES) VALUES (9066,'¡ÌﬁÍÂÈ ÛÙÁ √' ∆˛ÌÁ;','√_∆ŸÕ«','3','0','0','')
 
 ?>
