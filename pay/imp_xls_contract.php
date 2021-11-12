@@ -123,7 +123,10 @@ for ($i=$line_from; $i<= $line_to; $i++) {
         }
       }
     }
-    else { $Synola[1]++; }
+    else {
+      $Xoris_Contract[$i]=array($AFM,$Eponymo,$Onoma);
+      $Synola[1]++;
+    }
     $Synola[2]++;
   }
   else {
@@ -137,7 +140,8 @@ print 'бяехгйам   ='.$Synola[2].$eol;
 print 'выяис г ле кахос ажл='.$Synola[3].$eol;
 print 'LINE FROM='.$line_from.$eol;
 print 'LINE TO='.$line_to.$eol;
-print '<H3 style="color:blue">ZXCVB</H3><pre>'; print_r($Xoris_AFM); print "</pre>";
+print '<H3 style="color:blue">выяис ажл</H3><pre>'; print_r($Xoris_AFM); print "</pre>";
+print '<H3 style="color:blue">выяис сулбасг</H3><pre>'; print_r($Xoris_Contract); print "</pre>";
 //INSERT INTO EMP_CONTRACT_PARAMS (EMP_ID,ECOP_DESCRIPTION,ECOP_VARIABLE,ECOP_TYPE,ECOP_VALUE,ECOP_FPOINT,ECOP_VALUES) VALUES (9066,'аМчЙЕИ СТГ ц' фЧМГ;','ц_фымг','3','0','0','')
 
 ?>
