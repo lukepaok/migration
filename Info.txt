@@ -1,0 +1,7 @@
+GIT
+----------------------------------------
+https://github.com/lukepaok/migration
+
+DATABASE CONNECTION FILE (config)
+----------------------------------------
+config/config.php
