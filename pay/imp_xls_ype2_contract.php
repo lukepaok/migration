@@ -60,6 +60,7 @@ foreach ($Contr_ids_ar as $Value) {
   }
 }
 $Xoris_AFM=array();
+$Xoris_Contract=array();
 $Categ_ar=array('уе'=>1,'де'=>2,'те'=>3,'пе'=>4);
 $RENK_ar=array('258'=>1,'259'=>2,'260'=>3,'261'=>4,'262'=>4,'998'=>998);
 for ($i=$line_from; $i<= $line_to; $i++) {
@@ -96,6 +97,8 @@ for ($i=$line_from; $i<= $line_to; $i++) {
         $Dedf=f_sqlexe("SELECT * FROM EMPLOYEES_HAS_DEDUCTIONS WHERE EMP_ID=".$Emp_id." AND DED_ID=".$value." AND SYSMST_ID=0");
         if ($Dedf==0) { f_sqlexe("INSERT INTO EMPLOYEES_HAS_DEDUCTIONS (EMP_ID,DED_ID,SYSMST_ID,PAYTYPES,PRIORITY) VALUES (".$Emp_id.",".$value.",0,'1,2,3,4,5,6,7,8,9,10,11,12',1)"); }
       }
+
+      /*
       foreach ($Con_GenPars_ar[$CON_ID] as $value) {
         $Genpardf=f_GFsArray("SELECT * FROM GENERAL_PARAMS WHERE GEN_ID=".$value,array("GEN_VARIABLE","GEN_DESCRIPTION","GEN_TYPE","GEN_VALUE","GEN_FPOINT","GEN_VALUES"));
         $Genpardf['GEN_DESCRIPTION']=str_replace("'","╢",$Genpardf['GEN_DESCRIPTION']);
@@ -116,12 +119,15 @@ for ($i=$line_from; $i<= $line_to; $i++) {
                    ",SYSDATE,1,0,'".$Genpardf['GEN_DESCRIPTION']."')");
                f_sqlexe("INSERT INTO SYSTEM_SCD_REGISTER (SYSMST_ID,SYSREG_TABLE,SYSREG_TABLE_ID,SYSREG_TABLE_FIELD,SYSREG_VALIDFROM,SYSREG_VALUE,SYSREG_VALUE_TYPE,
                    SYSREG_VALUE_FPOINT,SYSREG_CREATED,SYSREG_TYPE,SYSREG_VALUEOLD,SYSREG_DESCRIPTION)
-                   VALUES (0,'emp_contract_params',".$Ecop_id.",'".$Genpardf['GEN_VARIABLE']."',".f_Form2SQL('01/01/2021').",'".$Genpardf['GEN_VALUE']."',".$Genpardf['GEN_TYPE'].",".$Genpardf['GEN_FPOINT'].
+                   VALUES (0,'emp_contract_params',".$Ecop_id.",'".$Genpardf['GEN_VARIABLE']."',".f_Form2SQL('01/01/2020').",'".$Genpardf['GEN_VALUE']."',".$Genpardf['GEN_TYPE'].",".$Genpardf['GEN_FPOINT'].
                    ",SYSDATE,1,0,'".$Genpardf['GEN_DESCRIPTION']."')");
             }
           }
         }
       }
+      */
+
+
     }
     else {
       $Xoris_Contract[$i]=array($AFM,$Eponymo,$Onoma);
@@ -142,7 +148,6 @@ print 'LINE FROM='.$line_from.$eol;
 print 'LINE TO='.$line_to.$eol;
 print '<H3 style="color:blue">выяис ажл</H3><pre>'; print_r($Xoris_AFM); print "</pre>";
 print '<H3 style="color:blue">выяис сулбасг</H3><pre>'; print_r($Xoris_Contract); print "</pre>";
-//INSERT INTO EMP_CONTRACT_PARAMS (EMP_ID,ECOP_DESCRIPTION,ECOP_VARIABLE,ECOP_TYPE,ECOP_VALUE,ECOP_FPOINT,ECOP_VALUES) VALUES (9066,'аМчЙЕИ СТГ ц' фЧМГ;','ц_фымг','3','0','0','')
 
 ?>
 </FONT>

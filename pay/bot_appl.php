@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 ?>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr><td height="4" align="center" bgcolor="BF3D29"><img src="../media/spacer.gif" width="4" height="4"></td></tr>

@@ -23,10 +23,14 @@ $line_to=$_REQUEST['line_to'];
 <TR><TD align="center">
   <TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
   <TR><TD height="70">&nbsp;</TD></TR>
+
+
   <TR><TD align="center" valign="top" height="330">
     <TABLE border="0" cellpadding="0" cellspacing="0">
     <TR><TD class="headtitle" align="center" valign="middle" height="50"><?php print $Appl_Title[$appname] ?></TD></TR>
     <TR>
+
+
 <TD width="450" align="center" valign="middle">
 <TABLE border="0" cellpadding="0" cellspacing="0">
 <TR><TD>

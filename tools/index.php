@@ -15,13 +15,10 @@ include($PATH_LANG.'/msg.php');
 <TR><TD align="center" valign="middle" height="400" >
 
 <?php
-$Menus1=array('select_file.php?appname=Import&progname=xls_ype2_contract'=>'YPE2->Εισαγωγη Σύμβασης (Excel)',
-              'select_file.php?appname=Import&progname=xls_ype2_update'=>'YPE2->Εισαγωγη Παραμέτρων (Excel)',
-              'select_file.php?appname=Import&progname=xls_ype2_contract2'=>'YPE2->Εισαγωγη Σύμβασης 2 (Excel)'
-);
+$Menus1=array('sql_empid.php'=>'SQL EMP_ID');
 $Menus2=array();
 $Menus3=array();
-f_GenMenu('PAYROLL','Migration', $Menus1, $Menus2, $Menus3);
+f_GenMenu('TOOLS','&nbsp; D A T A B A S E &nbsp;', $Menus1, $Menus2, $Menus3);
 ?>
 </TD></TR>
 <TR><TD><?php include('bottom.php'); ?></TD></TR></TABLE>

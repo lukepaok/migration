@@ -1,9 +1,18 @@
 <?php
-$DB_CONNECTION='YPE';
-$DB_SERVER='192.168.1.70';
-$DB_USER='CSDB2';
-$DB_PSWD='CSDB2';
-$DB_NAME='orcl_dev';
+$DB_CONNECTION='YPE2SVN';
+
+if ($DB_CONNECTION=='YPE2') {
+  $DB_SERVER='192.168.1.70';
+  $DB_USER='csdb2';
+  $DB_PSWD='csdb2';
+  $DB_NAME='orcl_dev';
+}
+elseif ($DB_CONNECTION=='YPE2SVN') {
+  $DB_SERVER='192.168.1.30';
+  $DB_USER='csdb2';
+  $DB_PSWD='csdb2';
+  $DB_NAME='Orcl';
+}
 
 $DB_TYPE       = 'Oracle';
 $ApplName   ="CS Migration";

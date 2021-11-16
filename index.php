@@ -20,7 +20,8 @@ include($PATH_LANG.'/msg_indexmenu.php');
 <?php
 $Menus1=array('csdb/index.php'=>" &nbsp; &nbsp; CSDB &nbsp; &nbsp; ",
               'pay/index.php'=>' &nbsp; &nbsp; Payroll &nbsp; &nbsp; ',
-              'per/index.php'=>' &nbsp; &nbsp; Personnel &nbsp; &nbsp; ');
+              'per/index.php'=>' &nbsp; &nbsp; Personnel &nbsp; &nbsp; ',
+              'tools/index.php'=>' &nbsp; &nbsp; Tools &nbsp; &nbsp; ');
 $Menus2=array();
 $Menus3=array();
 f_GenMenu('',' &nbsp; M e n u &nbsp; ', $Menus1, $Menus2, $Menus3);
