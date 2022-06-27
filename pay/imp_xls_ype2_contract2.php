@@ -66,7 +66,7 @@ $Xoris_Contract=array();
 $Wrong_iban=array();
 $No_iban=array();
 $Categ_ar=array('уе'=>1,'де'=>2,'те'=>3,'пе'=>4);
-$RENK_ar=array('258'=>1,'259'=>2,'260'=>3,'261'=>4,'262'=>4,'998'=>998);
+$RENK_ar=array('258'=>1,'259'=>2,'260'=>3,'261'=>4,'262'=>4,'998'=>4);
 
 $total=$line_to-$line_from+1;
 print '<div id="progress" style="width:500px;border:3px solid #ccc;"></div><div id="information" style="width"></div>';

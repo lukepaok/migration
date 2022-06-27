@@ -17,7 +17,9 @@ include($PATH_LANG.'/msg.php');
 <?php
 $Menus1=array('select_file.php?appname=Import&progname=xls_ype2_contract'=>'YPE2->Εισαγωγη Σύμβασης (Excel)',
               'select_file.php?appname=Import&progname=xls_ype2_update'=>'YPE2->Εισαγωγη Παραμέτρων (Excel)',
-              'select_file.php?appname=Import&progname=xls_ype2_contract2'=>'YPE2->Εισαγωγη Σύμβασης 2 (Excel)'
+              'select_file.php?appname=Import&progname=xls_ype2_contract2'=>'YPE2->Εισαγωγη Σύμβασης 2 (Excel)',
+              'select_file.php?appname=Import&progname=xls_ype2_checkupdate'=>'YPE2->Final Update (Excel)'
+
 );
 $Menus2=array();
 $Menus3=array();

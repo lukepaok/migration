@@ -51,9 +51,13 @@ $line_to=$_REQUEST['line_to'];
 <INPUT TYPE="HIDDEN" name=appname VALUE="<?php print $appname ?>" >
 <INPUT TYPE="HIDDEN" name=progname VALUE="<?php print $progname ?>" >
 <INPUT TYPE="HIDDEN" name="MAX_FILE_SIZE" VALUE="5000000">
-<TR><TD WIDTH="115"><?php print $Formfld1 ?></TD><TD CLASS="fld"><INPUT TYPE="file" STYLE="WIDTH:280px;" NAME="data_file" ID="data_file" value="<?php print $data_file ?>"></TD></TR>
+<TR><TD WIDTH="160"><?php print $Formfld1 ?></TD><TD CLASS="fld"><INPUT TYPE="file" STYLE="WIDTH:235px;" NAME="data_file" ID="data_file" value="<?php print $data_file ?>"></TD></TR>
 <TR><TD><?php print $Formfld2 ?></TD><TD CLASS="fld"><INPUT TYPE="text" NAME="line_from" ID="line_from" value="<?php print $line_from ?>"></TD></TR>
 <TR><TD><?php print $Formfld3 ?></TD><TD CLASS="fld"><INPUT TYPE="text" NAME="line_to" ID="line_to" value="<?php print $line_to ?>"></TD></TR>
+<TR><TD>Στήλη Αναζήτησης</TD><TD CLASS="fld"><INPUT TYPE="text" NAME="colsearch" ID="colsearch" SIZE=5px value="1"></TD></TR>
+<TR><TD><label for="sele">Field Αναζήτησης:</label></TD><TD><select id="fldsel" name="fldsel"><option value="EMP_TAX_NUMBER">ΑΦΜ</option><option value="EMP_AMKA">ΑΜΚΑ</option><option value="onoma">Ονοματεπώνυμο</option></select></TD></TR>
+<TR><TD>Στήλη IBAN</TD><TD CLASS="fld"><INPUT TYPE="text" NAME="coliban" ID="coliban" SIZE=5px value="2"></TD></TR>
+<TR><TD><label for="choice">Επιλογή:</label></TD><TD><select id="choice" name="choice"><option value="cprint">Εκτύπωση</option><option value="cexe">Εκτέλεση</option><option value="cfile">Αρχειο</option></select></TD></TR>
 <TR align="center"><TD colspan="2" height="25" valign="middle" background="../media/blue_bkg_for_button.gif" class="buttons">
 <INPUT CLASS="btn" TYPE="SUBMIT" VALUE="<?php print $BTNSearch ?>">&nbsp;&nbsp;&nbsp;
 </TD></TR>

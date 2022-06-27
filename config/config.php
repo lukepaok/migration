@@ -1,7 +1,19 @@
 <?php
-$DB_CONNECTION='YPE2SVN';
+$DB_CONNECTION='KERKYRA';
 
-if ($DB_CONNECTION=='YPE2') {
+if ($DB_CONNECTION=='KERKYRA') {
+  $DB_SERVER='192.168.1.70';
+  $DB_USER='csdb_ker';
+  $DB_PSWD='csdb_ker';
+  $DB_NAME='orcl_dev';
+}
+elseif ($DB_CONNECTION=='VOLOS') {
+  $DB_SERVER='10.10.2.163';
+  $DB_USER='csdb_volos';
+  $DB_PSWD='csdb_volos';
+  $DB_NAME='db1';
+}
+elseif ($DB_CONNECTION=='YPE2') {
   $DB_SERVER='192.168.1.70';
   $DB_USER='csdb2';
   $DB_PSWD='csdb2';
@@ -23,6 +35,7 @@ $PATH_LIB   = $PATH_APPL.'/lib';
 $PATH_LANG  = $PATH_APPL.'/lang/gr';
 $PATH_MEDIA = $PATH_APPL.'/media';
 $PATH_PARAMS= $PATH_APPL.'/config/params';
+$PATH_FILES = $PATH_APPL.'/files';
 $eol='<BR>';
 error_reporting (E_ALL & ~E_NOTICE);
 date_default_timezone_set('Europe/Athens');

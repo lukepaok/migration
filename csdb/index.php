@@ -16,8 +16,11 @@ include($PATH_LANG.'/msg.php');
 
 <?php
 $Menus1=array('select_file.php?appname=Import&progname=xls_iban'=>'Εισαγωγη IBAN (Excel)');
-$Menus2=array();
-$Menus3=array();
+$Menus2=array('export_data_csdb.php'=>'Εξαγωγη στοιχειων CSDB',
+              'check_data_csdb.php'=>'Ελεγχος Ελλειπων στοιχειων');
+$Menus3=array('select_file.php?appname=Import&progname=read_exceldata'=>'Αναγνωση EXCEL',
+              'select_file.php?appname=Import&progname=compare_exceldata'=>'Συγκριση στοιχείων απο EXCEL'
+              );
 f_GenMenu('C S D B','T o o l s', $Menus1, $Menus2, $Menus3);
 ?>
 </TD></TR>

@@ -62,7 +62,7 @@ foreach ($Contr_ids_ar as $Value) {
 $Xoris_AFM=array();
 $Xoris_Contract=array();
 $Categ_ar=array('уе'=>1,'де'=>2,'те'=>3,'пе'=>4);
-$RENK_ar=array('258'=>1,'259'=>2,'260'=>3,'261'=>4,'262'=>4,'998'=>998);
+$RENK_ar=array('258'=>1,'259'=>2,'260'=>3,'261'=>4,'262'=>4,'998'=>4);
 for ($i=$line_from; $i<= $line_to; $i++) {
   set_time_limit(30);
   $AFM=trim($data->sheets[0]['cells'][$i][7]);
@@ -88,6 +88,7 @@ for ($i=$line_from; $i<= $line_to; $i++) {
       elseif (in_array($Contr_temp,array(3,4,5))) { $CON_ID=310; }
     }
     if ($CON_ID>0) {
+
       f_sqlexe("UPDATE EMPLOYEES SET CON_ID=".$CON_ID." WHERE EMP_ID=".$Emp_id);
       foreach ($Con_Bens_ar[$CON_ID] as $value) {
         $Benf=f_sqlexe("SELECT * FROM EMPLOYEES_HAS_BENEFITS WHERE EMP_ID=".$Emp_id." AND BEN_ID=".$value." AND SYSMST_ID=0");
@@ -98,7 +99,6 @@ for ($i=$line_from; $i<= $line_to; $i++) {
         if ($Dedf==0) { f_sqlexe("INSERT INTO EMPLOYEES_HAS_DEDUCTIONS (EMP_ID,DED_ID,SYSMST_ID,PAYTYPES,PRIORITY) VALUES (".$Emp_id.",".$value.",0,'1,2,3,4,5,6,7,8,9,10,11,12',1)"); }
       }
 
-      /*
       foreach ($Con_GenPars_ar[$CON_ID] as $value) {
         $Genpardf=f_GFsArray("SELECT * FROM GENERAL_PARAMS WHERE GEN_ID=".$value,array("GEN_VARIABLE","GEN_DESCRIPTION","GEN_TYPE","GEN_VALUE","GEN_FPOINT","GEN_VALUES"));
         $Genpardf['GEN_DESCRIPTION']=str_replace("'","╢",$Genpardf['GEN_DESCRIPTION']);
@@ -125,7 +125,6 @@ for ($i=$line_from; $i<= $line_to; $i++) {
           }
         }
       }
-      */
 
 
     }
