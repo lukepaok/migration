@@ -106,6 +106,8 @@ for ($i = $line_from; $i <= $line_to; $i++) {
     print $i.' - NAME='.$Eponymo.' '.$Onoma.$eol;
     $TBL_NoData[]=array($Eponymo,$Onoma,$ValueSearch,$IBAN_no);
   }
+  
+
 }
 print 'UPDATE   ='.$Synola[1].$eol;
 print 'INSERT   ='.$Synola[2].$eol;
